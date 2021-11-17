@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	const int driving_age {16};
+    int n {};
+    int age {};
+    bool has_car {false};
+    char y_or_n {};
+    
+        cout << "Please enter age here: " << endl;
+        cin >> age;
+        cout << "Do you own a car? Enter y for yes or n for no:" << endl;
+        cin >> y_or_n;
+        
+        if(y_or_n=='y')
+        {
+           has_car=1;
+        } else {
+            has_car=0;
+        }
+            
+        
+            if(age<=driving_age)
+            {
+                n=driving_age-age;
+                cout << "Sorry come back in " << n << " years and be sure you own a car when you come back." << endl;
+            }else if(has_car==0) {
+                        cout << "Sorry you need to buy a car before you can drive!" << endl;
+            
+            } else {
+                    cout << "Yes you can drive!" << endl;
+                }
+    
+    
+	return 0;
+}
