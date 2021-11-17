@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	const int dollar_value{100};
+    const int quarter_value{25};
+    const int dime_value{10};
+    const int nickel_value{5};
+    const int penny_value{1};
+    
+    int change {};
+    
+    int balance{}, dollars{}, quarters{}, dimes{}, nickels{}, pennies{};
+    
+    cout << "Welcome to the change calcuator!"<< endl;
+    cout << "Enter your starting dollar amount: " << endl;
+    cin >> change;
+    
+        dollars=change/dollar_value;
+        balance=change-(dollars*dollar_value);
+    
+        quarters=balance/quarter_value;
+        balance-=quarters*quarter_value;
+    
+        dimes=balance/dime_value;
+        balance-=dimes*dime_value;
+        
+        nickels=balance/nickel_value;
+        balance-=nickels*nickel_value;
+        
+        pennies=balance/penny_value;
+
+    cout << "Your change for " << change << " should be: " << endl;
+    cout << "Dollars: " << dollars << endl;
+    cout << "Quarters: " << quarters << endl; 
+    cout << "Dimes: " << dimes << endl;
+    cout << "Nickels: " << nickels << endl;
+    cout << "Pennies: " << pennies << endl;
+    
+    
+	return 0;
+}
+
+
+/*I want to make a calulator that receives an amount in cents from the user and give 
+ * back the amount of dollars, quarters, dimes, nickels, pennies should be handed back.
+ * I will first create variables. 
+ * I will create a logical statement seeing if the amount is larger than a dollar and if not 
+ * have it go through the same logic with quarters, dimes, nickels, and pennies.
+ * 
+ * 
+ * 
+ * */
