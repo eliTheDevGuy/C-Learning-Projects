@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	const int driving_age{16};
+    int age{};
+    int n{};
+    
+    
+        cout << "Can you drive?" << endl;
+        cout << "Enter age here: " << endl;
+        cin >> age;
+        
+            if(age>=driving_age)
+                {
+                cout << "Yes-you can drive!" << endl;
+                }
+             else
+             {
+            n=driving_age-age;
+            cout << "Sorry come back in " << n << " years" << endl;
+                 
+                 
+             }
+    
+    
+	return 0;
+}
